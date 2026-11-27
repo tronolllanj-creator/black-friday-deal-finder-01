@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Beacon — 30 checked deals</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+<div class="brand"><span class="beacon" aria-hidden="true">&#9679;</span> Black Friday <b>Beacon</b></div>
+<p class="tag">Thirty real deals, checked 27 Nov 2026 at 06:10 UTC. Prices verified against the named store or deals source on each card.</p>
+<div class="stats"><span id="statCount">30 deals</span><span id="statSaving"></span><span>Checked 27 Nov 2026, 06:10 UTC</span></div>
+</header>
+<section class="toolbar" aria-label="Find deals">
+<input id="q" type="search" placeholder="Search a product, e.g. AirPods, TV, laptop" aria-label="Search deals">
+<select id="cat" aria-label="Category"><option value="">All categories</option></select>
+<select id="store" aria-label="Store"><option value="">All stores</option><option>Amazon</option><option>Best Buy</option></select>
+<select id="mind" aria-label="Minimum discount"><option value="0">Any discount</option><option value="15">15% off or more</option><option value="25">25% off or more</option><option value="40">40% off or more</option></select>
+<select id="sort" aria-label="Sort deals"><option value="discount">Best discount first</option><option value="saving">Biggest saving first</option><option value="price">Lowest price first</option></select>
+</section>
+<p id="resultLine" class="resultline" aria-live="polite"></p>
+<main id="grid" class="grid"></main>
+<section id="detail" class="detail" hidden></section>
+<footer class="foot">
+<p>Every price was read on 27 Nov 2026 at 06:10 UTC from the store or the deals source named on its card. Discounts are computed from the sale and usual prices shown. Store links open the store search for that product in a new tab.</p>
+<p>Black Friday Beacon is an independent deal finder, not affiliated with Amazon, Best Buy, or any brand shown.</p>
+</footer>
+</body>
+</html>
